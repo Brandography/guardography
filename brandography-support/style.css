@@ -1,0 +1,127 @@
+form#brandography-support-form {
+	position: relative;
+}
+form#brandography-support-form label {
+	display: block;
+	font-weight: bold;
+	padding: 5px 0;
+}
+form#brandography-support-form label + input {
+	margin-bottom: 5px;
+}
+form#brandography-support-form input[type="text"] {
+	display: block;
+	width: 100%;
+}
+form#brandography-support-form input[type="submit"] {
+	/*float: left;*/
+}
+p.feedback-error {
+	box-sizing: border-box;
+	border: 1px solid rgba(217,48,40,1);
+	color: rgba(217,48,40,1);
+	background-color: rgba(217,48,40, 0.2);
+	padding: 2px 5px;
+}
+#brandography-support-loader {
+	display: none;
+	opacity: 1;
+}
+#brandography-support-loader svg {
+	animation: brando-support-spin 950ms infinite linear;
+    margin: 18px auto;
+    display: block;
+    fill: #fa9600;
+}
+@keyframes brando-support-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}
+#brandography-support-success,
+#brandography-support-error {
+	display: none;
+}
+#brandography-support-success .success-icon,
+#brandography-support-error .error-icon {
+	margin: 0 auto;
+	width: 100px;
+}
+#brandography-support-success .content,
+#brandography-support-error .content {
+	text-align: center;
+}
+
+h2.brandography-support-title {
+  color: #fa9600;
+  font-weight: lighter;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28px;
+  margin: 15px 0;
+  padding-bottom: 15px !important;
+  -webkit-font-smoothing: antialiased;
+}
+h2.brandography-support-title > svg {
+  margin: 0 15px 0 10px;
+  height: 70px;
+  width: 70px;
+}
+h2.brandography-support-title > span {
+  line-height: 1.2;
+}
+h2.brandography-support-title + p {
+  font-size: 0.8em;
+}
+
+.action-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form.brandography-support-form {
+  width: 100%;
+}
+form.brandography-support-form textarea.brandography-support-message {
+  border: 1px solid #e6e6e6;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  min-height: 150px;
+}
+form.brandography-support-form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+form.brandography-support-form .form-row input[type="text"] {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 5px;
+}
+form.brandography-support-form input[type="submit"] {
+  background-color: #fa9600;
+  border: 0;
+  padding: 15px 0;
+  font-weight: bold;
+  color: #FFF;
+  width: 100%;
+  letter-spacing: 1px;
+}
